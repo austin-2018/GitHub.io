@@ -1,1 +1,1 @@
-# GitHub.io
+# Resources and tests used for project
