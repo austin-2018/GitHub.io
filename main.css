@@ -1,3 +1,11 @@
+/* center canvas https://stackoverflow.com/questions/5127937/how-to-center-canvas-in-html5 */
+canvas {
+    padding: 0;
+    margin: auto;
+    display: block;
+}
+
+/*flexbox*/
 .wrapper {
   display: flex;
   flex-wrap: wrap;
