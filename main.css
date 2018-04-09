@@ -13,5 +13,4 @@ main > aside   { order: 3; width: 200px; }
     order: 0; width: auto;
   }
 }
-/* test */
 /* end https://www.w3.org/TR/css-flexbox-1/#order-accessibility */
