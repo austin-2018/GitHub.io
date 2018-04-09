@@ -11,3 +11,19 @@
   line-height: 75px;
   font-size: 30px;
 }
+/* source https://www.w3.org/TR/css-flexbox-1/#order-accessibility */
+/* Authors must use order only for visual, not logical, reordering of content. Style sheets that use order to perform logical reordering are non-conforming. */
+main { display: flex; }
+main > article { order: 2; min-width: 12em; flex:1; }
+main > nav     { order: 1; width: 200px; }
+main > aside   { order: 3; width: 200px; }
+
+@media all and (max-width: 600px) {
+  /* Too narrow to support three columns */
+  main { flex-flow: column; }
+  main > article, main > nav, main > aside {
+    /* Return them to document order */
+    order: 0; width: auto;
+  }
+}
+/* end https://www.w3.org/TR/css-flexbox-1/#order-accessibility */
