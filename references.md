@@ -1,15 +1,15 @@
-## adafruit Microsoft partnership
+## ADA FRUIT WITH MICROSOFT PARTNERSHIP
 
 ### Microsoft IoT Pack for Rasberry Pi 3
 ### https://www.adafruit.com/windows10iotpi2
 #### NOTE: Note: As of August 8th, 2016 this kit has been updated to be compatible with the Pi 3.  This means that it no longer contains a WiFi Module and now contains a 16 GB SD card flashed with NOOBs.
 
-## Azure
+## AZURE
 
 ### Get Started with Microsoft Azure IoT Starter Kit - SparkFun ESP8266 Thing Dev Kit (Arduino-compatible)
 ### https://azure.microsoft.com/en-us/resources/samples/iot-hub-c-thingdev-getstartedkit/
 
-## hackster.io
+## HACKSTER.IO
 
 ### Connected Walker
 ### https://www.hackster.io/connected-walker/connected-walker-3e94b4
@@ -20,7 +20,14 @@
 ### Microsoft Azure IoT Starter Kit - SparkFun Thing
 ### https://www.hackster.io/sparkfun/products/microsoft-azure-iot-starter-kit-sparkfun-thing
 
-## sparkfun
+## SMS
+
+### WinIoT Receive SMS, Get signal bars GSM network
+#### Hi Morten, I have merged your question into an existing thread on the same topic.  Essentially the subsystem required for full SMS support is missing in IOT Core.  The suggestion is that you create a feedback item with your device usage scenario for the IoT Core team to evaluate and add to their work item backlog.
+### https://social.msdn.microsoft.com/Forums/en-US/0c6dca5a-49a9-44ef-8e62-00fbc470a9aa/winiot-receive-sms-get-signal-bars-gsm-network?forum=WindowsIoT
+
+
+## SPARKFUN
 
 ### Choosing a LilyPad Arduino for Your Project
 ### https://learn.sparkfun.com/tutorials/choosing-a-lilypad-arduino-for-your-project
@@ -32,7 +39,7 @@
 ### Microsoft Azure IoT Starter Kit - SparkFun Thing
 ### https://www.sparkfun.com/products/13799
 
-## Windows
+## WINDOWS
 
 ### Windows 10 Internet of Things
 ### https://developer.microsoft.com/en-us/windows/iot
