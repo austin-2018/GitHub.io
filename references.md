@@ -30,6 +30,9 @@
 #### Phone notifications are a good way to get alerted about an unusual activity. When we are developing an IoT solution it is always good to send SMS to user’s phone for certain activity as the smartphones are always within reach. It is not always possible for a user to monitor the data with a Mobile app or a website. If they get a notification about a certain activity or a sudden variation in data they will come to know this by time and can immediately check it with the mobile app and can take the further steps.
 ### https://www.c-sharpcorner.com/UploadFile/f55fd9/sending-sms-and-email-from-your-iot-device/
 
+### Methane Detection System
+### https://www.hackster.io/netmf-team1/methane-detection-system-ffa513
+
 
 ## SPARKFUN
 
