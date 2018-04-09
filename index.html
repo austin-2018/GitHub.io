@@ -3,33 +3,60 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="main.css">
+<!-- <link rel="stylesheet" href="main.css"> -->
 </head>
   <body>
-  <div class="flex-container">
-    <header>
-      <h1>Home Page Header</h1>
-    </header>
-    <nav>Navigation</nav>
-    <main>
-      <article>
-          <div>1</div>
-          <div>2</div>
-          <div>3</div>  
-          <div>4</div>
-          <div>5</div>
-          <div>6</div>  
-          <div>7</div>
-          <div>8</div>
-          <div>9</div>  
-          <div>10</div>
-          <div>11</div>
-          <div>12</div>  
-        </article>
-        </main>
-        <aside>Aside</aside>
-        <footer><a href="https://en.wikipedia.org/wiki/Spatial_navigation">Spatial Navigation</a></footer>
-    </div><!-- closes flex container -->
+@media (orientation: portrait) {
+  #grid {
+    display: grid;
+
+    /* The rows, columns and areas of the grid are defined visually
+     * using the grid-template-areas property.  Each string is a row,
+     * and each word an area.  The number of words in a string
+     * determines the number of columns. Note the number of words
+     * in each string must be identical. */
+    grid-template-areas: "title stats"
+                         "score stats"
+                         "board board"
+                         "ctrls ctrls";
+
+    /* The way to size columns and rows can be assigned with the
+     * grid-template-columns and grid-template-rows properties. */
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto 1fr auto;
+  }
+}
+
+@media (orientation: landscape) {
+  #grid {
+    display: grid;
+
+    /* Again the template property defines areas of the same name,
+     * but this time positioned differently to better suit a
+     * landscape orientation. */
+    grid-template-areas: "title board"
+                         "stats board"
+                         "score ctrls";
+
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr auto;
+  }
+}
+
+/* The grid-area property places a grid item into a named
+ * area of the grid. */
+#title    { grid-area: title }
+#score    { grid-area: score }
+#stats    { grid-area: stats }
+#board    { grid-area: board }
+#controls { grid-area: ctrls }
+<div id="grid">
+  <div id="title">Game Title</div>
+  <div id="score">Score</div>
+  <div id="stats">Stats</div>
+  <div id="board">Board</div>
+  <div id="controls">Controls</div>
+</div>
   </body>
 </html>
  
