@@ -1,0 +1,706 @@
+/*Source https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Flexible_boxes */
+  body {
+   font: 16px Arial, Helvetica;
+   /* background: #999999;*/
+   background:#ffffff;
+   color: #333366;
+  }
+
+  #main {
+   min-height: 800px;
+   margin: 0px;
+   padding: 0px;
+   display: -webkit-flex;
+   display:         flex;
+   -webkit-flex-flow: row;
+           flex-flow: row;
+   }
+ 
+  #main > article {
+   margin: 4px;
+   padding: 5px;
+   border: 1px solid #cccc33;
+   border-radius: 7pt;
+   background: #dddd88;
+   -webkit-flex: 3 1 60%;
+           flex: 3 1 60%;
+   -webkit-order: 2;
+           order: 2;
+   }
+  
+  #main > nav {
+   margin: 4px;
+   padding: 5px;
+   border: 1px solid #8888bb;
+   border-radius: 7pt;
+   background: #ccccff;
+   -webkit-flex: 1 6 20%;
+           flex: 1 6 20%;
+   -webkit-order: 1;
+           order: 1;
+   }
+  
+  #main > aside {
+   margin: 4px;
+   padding: 5px;
+   border: 1px solid #8888bb;
+   border-radius: 7pt;
+   background: #ccccff;
+   -webkit-flex: 1 6 20%;
+           flex: 1 6 20%;
+   -webkit-order: 3;
+           order: 3;
+   }
+ /*removed header from the styling below which included both header and footer */
+  footer {
+   display: block;
+   margin: 4px;
+   padding: 5px;
+   min-height: 100px;
+   /* take away the min-height and the text overruns */
+   /*border: 1px solid #eebb55;*/
+   border-bottom: 5px solid #1fb2d2;
+   /*border-radius: 7pt;*/
+   /*background: #ffeebb;*/
+   /*background: #ffffff;*/
+   }
+ 
+  /* Too narrow to support three columns */
+  @media all and (max-width: 640px) {
+  
+   #main, #page {
+    -webkit-flex-flow: column;
+            flex-direction: column;
+   }
+
+   #main > article, #main > nav, #main > aside {
+    /* Return them to document order */
+    -webkit-order: 0;
+            order: 0;
+   }
+  
+   #main > nav, #main > aside, header, footer {
+    min-height: 50px;
+    max-height: 50px;
+   }
+  }
+ 
+/* below from http://webaim.org/techniques/css/invisiblecontent/ */      
+  #skip a
+{
+position:absolute;
+left:-10000px;
+top:auto;
+width:1px;
+height:1px;
+overflow:hidden;
+}
+ 
+#skip a:focus
+{
+position:static;
+width:auto;
+height:auto;
+}  
+/*Flex modifications here remember to include the skip link */
+/*Adding blue-green color 1fb2d2*/
+/* Below adapted from CSS Tricks  https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: flex-start;
+  /*add flex-wrap: wrap; this seems to solve the wrap-around problem for CSS tricks example*/
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
+/* storm color #4b6e8c */
+/* tan color #be9a84 */
+/*bluegreen color 1fb2d2 This will definitely need to be checked for color contrast*/
+
+.flex-item-thumb {
+  background: transparent;
+  border-left:15px solid #ffffff;
+  padding: 5px;
+  width: 200px;
+  height: 300px;
+  margin-top: 10px;
+  /*line-height: 100px;*/
+  color: #333;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+  overflow: hidden;
+  flex-grow: 1;
+} 
+
+.flex-item-19 {
+  background: #333366;
+  border-left:15px solid #be9a84;
+  padding: 5px;
+  width: 200px;
+  height: 19px;
+  margin-top: 10px;
+  *line-height: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+  overflow: hidden;
+  flex-grow: 1;
+} 
+
+.flex-item-19r {
+  background: #333366;
+  border-right:15px solid #be9a84;
+  padding: 5px;
+  width: 200px;
+  height: 19px;
+  margin-top: 10px;
+  *line-height: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+  overflow: hidden;
+  flex-grow: 1;
+} 
+
+.flex-item {
+  background: tomato;
+  border-left:15px solid #993333;
+  padding: 5px;
+  width: 200px;
+  height: 100px;
+  margin-top: 10px;
+  line-height: 100px;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+  overflow: hidden;
+  flex-grow: 1;
+  order: 1;
+} 
+
+.flex-item-brick {
+  background: #993333;
+  border-left:15px solid #000000;
+  padding: 5px;
+  width: 200px;
+  height: 100px;
+  margin-top: 10px;
+  line-height: 100px;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+  overflow: hidden;
+  flex-grow: 1;
+  order: 2;
+} 
+
+.flex-item-black {
+  background: #000000;
+  border-left:15px solid #ff0000;
+  padding: 5px;
+  width: 200px;
+  height: 100px;
+  margin-top: 10px;
+  line-height: 100px;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+  overflow: hidden;
+  flex-grow: 1;
+  order: 3;
+} 
+/* add blue color to above 00ccff */
+
+.flex-item-blue {
+  background: #333366;
+  border-left:15px solid #be9a84;
+  padding: 5px;
+  width: 200px;
+  height: 100px;
+  margin-top: 10px;
+  line-height: 100px;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+  overflow: hidden;
+  flex-grow: 1;
+  order: 4;
+} 
+
+.flex-item-bluegreen {
+  background: #1fb2d2;
+  border-left:15px solid #4b6e8c;
+  padding: 5px;
+  width: 200px;
+  height: 100px;
+  margin-top: 10px;
+  line-height: 100px;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+  overflow: hidden;
+  flex-grow: 1;
+  order: 6;
+} 
+
+.flex-item-greenblue {
+  background: #45cba1;
+  border-left:15px solid #4b6e8c;
+  padding: 5px;
+  width: 200px;
+  height: 100px;
+  margin-top: 10px;
+  line-height: 100px;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+  overflow: hidden;
+  flex-grow: 1;
+  order: 5;
+} 
+
+.flex-item-storm {
+  background: #4b6e8c;
+  border-left:15px solid #1fb2d2;
+  padding: 5px;
+  width: 200px;
+  height: 100px;
+  margin-top: 10px;
+  line-height: 100px;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+  overflow: hidden;
+  flex-grow: 1;
+  order: 7;
+} 
+
+.flex-item-tan {
+  background: #be9a84;
+  border-left:15px solid #ff0000;
+  padding: 5px;
+  width: 200px;
+  height: 100px;
+  margin-top: 10px;
+  line-height: 100px;
+  color: black;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+  overflow: hidden;
+  flex-grow: 1;
+  order: 8;
+} 
+
+.flex-item a, a:active {
+  background: tomato;
+  padding: 5px;
+  width: 200px;
+  height: 100px;
+  margin-top: 10px;
+  line-height: 100px;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+  text-decoration:none;
+} 
+
+.flex-item a:hover, a:focus {
+  background: #000000;
+  padding: 5px;
+  width: 200px;
+  height: 100px;
+  margin-top: 10px;
+  /*line-height: 150px;*/
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+  text-decoration:none;
+} 
+
+
+.flex-item-blue a, a:active {
+  background: #333366;
+  padding: 5px;
+  width: 200px;
+  height: 100px;
+  margin-top: 10px;
+  line-height: 100px;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+  text-decoration:none;
+} 
+
+.flex-item-blue a:hover, a:focus {
+  background: #000000;
+  padding: 5px;
+  width: 200px;
+  height: 100px;
+  margin-top: 10px;
+  /*line-height: 150px;*/
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+  text-decoration:none;
+} 
+
+.flex-item-19 a, a:active {
+  background: #333366;
+  padding: 5px;
+  width: 200px;
+  height: 19px;
+  margin-top: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+  text-decoration:none;
+} 
+
+.flex-item-19 a:hover, a:focus {
+  background: #000000;
+  padding: 5px;
+  width: 200px;
+  height: 19px;
+  margin-top: 10px;
+  line-height: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+  text-decoration:none;
+} 
+
+.flex-item-19r a, a:active {
+  background: #333366;
+  padding: 5px;
+  width: 200px;
+  height: 19px;
+  margin-top: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+  text-decoration:none;
+} 
+.flex-item-19r a:hover, a:focus {
+  background: #000000;
+  padding: 5px;
+  width: 200px;
+  height: 19px;
+  margin-top: 10px;
+  line-height: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+  text-decoration:none;
+} 
+
+.flex-item-storm a:hover, a:focus {
+  background: #000000;
+  padding: 5px;
+  width: 200px;
+  height: 100px;
+  margin-top: 10px;
+  line-height: 100px;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+  text-decoration:none;
+} 
+
+.flex-item-storm a, a:active {
+  background: #4b6e8c;
+  padding: 5px;
+  width: 200px;
+  height: 100px;
+  margin-top: 10px;
+  /*line-height: 150px;*/
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+  text-decoration:none;
+} 
+
+
+.flex-item-bluegreen a, a:active {
+  background: #1fb2d2;
+  padding: 5px;
+  width: 200px;
+  height: 100px;
+  margin-top: 10px;
+  line-height: 100px;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+  text-decoration:none;
+} 
+
+.flex-item-bluegreen a:hover, a:focus {
+  background: #000000;
+  padding: 5px;
+  width: 200px;
+  height: 100px;
+  margin-top: 10px;
+  /*line-height: 150px;*/
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+  text-decoration:none;
+} 
+
+.flex-item-brick a, a:active {
+  background: #993333;
+  padding: 5px;
+  width: 200px;
+  height: 100px;
+  margin-top: 10px;
+  line-height: 100px;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+  text-decoration:none;
+} 
+
+.flex-item-brick a:hover, a:focus {
+  background: #000000;
+  padding: 5px;
+  width: 200px;
+  height: 100px;
+  margin-top: 10px;
+  /*line-height: 150px;*/
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+  text-decoration:none;
+} 
+
+.flex-item-black a, a:active {
+  background: #000000;
+  padding: 5px;
+  width: 200px;
+  height: 100px;
+  margin-top: 10px;
+  line-height: 100px;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+  text-decoration:none;
+} 
+
+.flex-item-black a:hover, a:focus {
+  background: #993333;
+  padding: 5px;
+  width: 200px;
+  height: 100px;
+  margin-top: 10px;
+  /*line-height: 150px;*/
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+  text-decoration:none;
+} 
+.flex-item-tan a, a:active {
+  background:#be9a84;
+  padding: 5px;
+  width: 200px;
+  height: 100px;
+  margin-top: 10px;
+  line-height: 100px;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+  text-decoration:none;
+} 
+
+.flex-item-tan a:hover, a:focus {
+  background: #000000;
+  padding: 5px;
+  width: 200px;
+  height: 100px;
+  margin-top: 10px;
+  /*line-height: 150px;*/
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+  text-decoration:none;
+} 
+
+/*brown 67300c */
+
+.flex-item-brown {
+  background: #67300c;
+  border-left:15px solid #000000;
+  padding: 5px;
+  width: 200px;
+  height: 100px;
+  margin-top: 10px;
+  line-height: 100px;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+  overflow: hidden;
+  flex-grow: 1;
+  /*order: 2;*/
+} 
+
+.flex-item-brown a, a:active {
+  background: #67300c;
+  padding: 5px;
+  width: 200px;
+  height: 100px;
+  margin-top: 10px;
+  line-height: 100px;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+  text-decoration:none;
+} 
+
+.flex-item-brown a:hover, a:focus {
+  background: #000000;
+  padding: 5px;
+  width: 200px;
+  height: 100px;
+  margin-top: 10px;
+  /*line-height: 150px;*/
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+  text-decoration:none;
+} 
+.flex-item-greenblue a:hover, a:focus {
+  background: #000000;
+  padding: 5px;
+  width: 200px;
+  height: 100px;
+  margin-top: 10px;
+  /*line-height: 150px;*/
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+  text-decoration:none;
+}
+
+/*above is end of code modified and adapted from CSS tricks */
+    
+   
+/* below to test content before and after */
+/* also see reference https://css-tricks.com/css-content/ */
+.flex-item::before { 
+    content: "To Do: ";
+}
+.flex-item-bluegreen::before { 
+    content: "To Do: ";
+    color: #000000;
+}
+
+.flex-item-greenblue::before { 
+    content: "ARIA: ";
+    color: #ffffff;
+}
+.flex-item-storm::before { 
+    content: "Looking At: ";
+}
+ 
+.flex-item-brick::before { 
+    content: "Add-Ons: ";
+}
+.flex-item-blue::before { 
+    content: "a11y Slacker: ";
+}
+
+.flex-item-tan::before { 
+    content: "Reading: ";
+}
+
+.flex-item-brick a:visited:before {
+   content:  "\2713 ";
+}
+
+.flex-item-blue a:visited:before {
+   content:  "\2713 ";
+}
+
+.flex-item-brown::before { 
+    content: "Geoloc: ";
+}
+
+.flex-item-black::before { 
+    content: "!: ";
+}
+/* end test content before and after */  
+   
+.slant-brick {
+    width: 200px;
+    height: 200px;
+    background-color:#993333;
+    border-left:15px solid #000000;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    text-align: center;
+    overflow: hidden;
+    flex-grow: 1;
+    order: 20;
+    /* Rotate div */
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+    transform: rotate(45deg);
+}    
+
+.slant-brick a, a:active {
+  color: white;
+  font-weight: bold;
+  text-decoration:none;
+} 
+
+.flex-item-brick a:hover, a:focus {
+  background: #000000;
+  color: white;
+  font-weight: bold;
+  text-decoration:none;
+  border-left:15px solid #ffffff;
+} 
+
+.slant-brick::before { 
+    content: "Notes: ";
+}
+ 
