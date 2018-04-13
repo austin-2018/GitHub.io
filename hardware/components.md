@@ -11,3 +11,8 @@
 #### HDMI cable.
 #### Access to a PC.
 #### USB WiFi adapter (older models of Raspberry Pi) or Ethernet cable.
+
+
+
+
+
