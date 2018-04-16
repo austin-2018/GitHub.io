@@ -41,3 +41,15 @@
   grid-column: 3;
   grid-row: 4;
 }
+.gc1gr1 {
+  grid-column: 1;
+  grid-row: 1;
+}
+.gc1gr2 {
+  grid-column: 1;
+  grid-row: 2;
+}
+.gc1gr3 {
+  grid-column: 1;
+  grid-row: 3;
+}
