@@ -1,25 +1,43 @@
-/*flexbox*/
-.wrapper {
+/* flexbox css for testing */
+/* needs to be used in conjunction with grids */
+.flexwrapper {
   display: flex;
   flex-wrap: wrap;
 }
-.wrapper > div {
+.flexwrapper > div {
   flex: 1 1 200px;
   color: red;
 }
-/*end flexbox*/
-.box1 
-  background-red: red;
+/* end flexbox */
+/* css grid for testing */
+/* based off CSS Grid Layout https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout 17 April 2018 */
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
 }
-.box2 
-  background: orange;
+.one {
+  grid-column: 1 / 3;
+  grid-row: 1;
 }
-.box3 
-  background: yellow;
+.two { 
+  grid-column: 2 / 4;
+  grid-row: 1 / 3;
 }
-.box4 
-  background: green;
+.three {
+  grid-column: 1;
+  grid-row: 2 / 5;
 }
-.box5 
-  background: blue;
+.four {
+  grid-column: 3;
+  grid-row: 3;
+}
+.five {
+  grid-column: 2;
+  grid-row: 4;
+}
+.six {
+  grid-column: 3;
+  grid-row: 4;
 }
