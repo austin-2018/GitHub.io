@@ -73,7 +73,7 @@
 .screen911wide {
   background: url('/wireframes/backdrop911screen.png');
   background-repeat: no-repeat;
-  object-fit: cover;
+  object-fit: fill;
   color: white;
   grid-column: 1/4;
   grid-row: 1;
