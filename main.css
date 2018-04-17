@@ -86,9 +86,25 @@
 }
 .wireframe2 {
   grid-column: 3/4;
-  grid-row: 1;
+  grid-row: 1/1;
 }
-.wireframe3 {
+.wireframe3a {
   grid-column: 1;
   grid-row: 1;
+}
+.wireframe3b {
+  grid-column: 1;
+  grid-row: 2;
+}
+.wireframe3c {
+  grid-column: 1;
+  grid-row: 3;
+}
+.wireframe3d {
+  grid-column: 1;
+  grid-row: 4;
+}
+.wireframe3e {
+  grid-column: 1;
+  grid-row: 5;
 }
