@@ -74,6 +74,7 @@
   background: url('/wireframes/backdrop911screen.png');
   background-repeat: no-repeat;
   background-size: 98% auto;
+  color: white;
   grid-column: 1/4;
   grid-row: 1;
 }
