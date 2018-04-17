@@ -31,7 +31,7 @@
 }
 /* To better illustrate mobile phone settings */
 .wrapper-phone {
-  max-width: 400px;
+  max-width: 500px;
   margin: 0 auto;
 }
 .wrapper-phone > div {
