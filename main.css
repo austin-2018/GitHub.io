@@ -73,7 +73,7 @@
 .screen911wide {
   background: url('/wireframes/backdrop911screen.png');
   background-repeat: no-repeat;
-  background-size: 98% auto;
+  background-size: cover;
   color: white;
   grid-column: 1/4;
   grid-row: 1;
