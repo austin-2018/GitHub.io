@@ -106,7 +106,7 @@
 .wireframe2 {
   grid-column: 3/4;
   grid-row: 1;
-  height: 10vh;
+  height: 100px;
 }
 .wireframe3a {
   grid-column: 1;
