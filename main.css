@@ -74,6 +74,7 @@
   background: url('/wireframes/backdrop911screen.png');
   background-repeat: no-repeat;
   object-fit: fill;
+  /* https://css-tricks.com/almanac/properties/o/object-fit/ */
   color: white;
   grid-column: 1/4;
   grid-row: 1;
