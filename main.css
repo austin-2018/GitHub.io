@@ -78,3 +78,15 @@
   grid-column: 1/4;
   grid-row: 1;
 }
+.wireframe1 {
+  grid-column: 1/4;
+  grid-row: 1;
+}
+.wireframe2 {
+  grid-column: 3/4;
+  grid-row: 1;
+}
+.wireframe3 {
+  grid-column: 1;
+  grid-row: 1;
+}
