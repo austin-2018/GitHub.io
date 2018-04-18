@@ -5,3 +5,4 @@
 
 #### DHT11 (Raspberry Pi)
 #### https://www.youtube.com/watch?v=KUr8WgSIsfk
+##### https://github.com/szazo/DHT11_Python
