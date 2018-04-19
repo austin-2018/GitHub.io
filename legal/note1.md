@@ -1,4 +1,4 @@
-### NOTES FROM The Legal Side of Open Source
+### NOTES FROM: The Legal Side of Open Source
 
 #### https://opensource.guide/legal/
 ###### Note 1
