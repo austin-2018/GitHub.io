@@ -85,12 +85,12 @@
   grid-row: 3;
 }
 .screen911 {
-  background: url('/wireframes/backdrop911screen.png');
+  background: url('/wireframes/backdrop911screen.jpg');
   grid-column: 1;
   grid-row: 2;
 }
 .screen911wide {
-  background: url('/wireframes/backdrop911screen.png');
+  background: url('/wireframes/backdrop911screen.jpg');
   background-repeat: no-repeat;
   object-fit: fill;
   /* https://css-tricks.com/almanac/properties/o/object-fit/ */
