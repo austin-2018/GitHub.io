@@ -1,7 +1,9 @@
-# HARDWARE RECOMMENDATTIONS 
+# HARDWARE RECOMMENDATIONS 
 
-### As recommended in the following article | How to install Windows 10 IoT Core on Raspberry Pi 3
-### https://www.windowscentral.com/how-install-windows-10-iot-raspberry-pi-3
+### Set One
+
+#### As recommended in the following article | How to install Windows 10 IoT Core on Raspberry Pi 3
+##### https://www.windowscentral.com/how-install-windows-10-iot-raspberry-pi-3
 
 
 1. Raspberry Pi 3.
