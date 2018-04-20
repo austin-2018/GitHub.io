@@ -1,5 +1,8 @@
-# EPICS
+# STORIES AND EPICS
 
+#### Link to Pivotal Tracker | https://www.pivotaltracker.com/n/projects/2165791
+
+## EPICS
 ### Assemble Hardware
 ### Configure Hardware
 ### Set up Twilio
@@ -9,8 +12,7 @@
 ### Code to send SMS
 
 
-#### Link to Pivotal Tracker
-#### https://www.pivotaltracker.com/n/projects/2165791
+
 
 ![PivotalTracker](Project2165791_April19.png)
 
