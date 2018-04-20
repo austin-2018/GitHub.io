@@ -1,7 +1,7 @@
 # MEETUPS 
 
 ## .NET Core on a Raspberry Pi Cluster with Docker and OpenFaaS
-### https://www.meetup.com/St-Pete-NET-Meetup/events/247299483/?_cookie-check=UV448hkGna5vztpg
+### https://www.meetup.com/St-Pete-NET-Meetup/events/247299483/
 ###### April 3, 2018
 ###### Hosted by John C. and Clayton H.
 ###### From St Pete .NET Meetup
