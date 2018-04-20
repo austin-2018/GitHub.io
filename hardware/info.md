@@ -1,8 +1,10 @@
-# HARDWARE RECOMMENDATIONS 
+# HARDWARE 
 
-### Set One
+#### Microsoft Compatibility List
+##### https://docs.microsoft.com/en-us/windows/iot-core/learn-about-hardware/HardwareCompatList
 
-#### As recommended in the following article | How to install Windows 10 IoT Core on Raspberry Pi 3
+
+#### Recommendations | How to install Windows 10 IoT Core on Raspberry Pi 3
 ##### https://www.windowscentral.com/how-install-windows-10-iot-raspberry-pi-3
 
 
