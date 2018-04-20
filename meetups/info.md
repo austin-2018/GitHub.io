@@ -7,6 +7,9 @@
 ###### From St Pete .NET Meetup
 ###### This Meetup is past 40 people went
 
+![Meetup Location](dotnetcoremeetup.png)
+Format: ![](dotnetcoremeetup.png)
+
 ``` .NET Core on a Raspberry Pi Cluster with Docker and OpenFaaS```
 
 ```Wondering what to do with a Raspberry Pi? Ever wanted to setup your own cluster? Interested to see how truly cross-platform .NET Core really is? We'll explore creating and deploying serverless functions on something other than AWS or Azure using the OpenFaas (Functions as a Service) framework. OpenFaaS (Functions as a Service) is a framework for building serverless functions with Docker and Kubernetes. On a Raspberry Pi cluster with 6 nodes we'll configure Redis, install and configure OpenFaaS, deploy functions written in Python and C#, watch as functions scale up and down under load, and monitor the health of our system using Grafana.```
