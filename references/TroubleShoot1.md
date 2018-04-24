@@ -13,6 +13,8 @@
 ##### Says I need to format Drive I before using
 ##### Reformatting to FAT File system in Drive I
 
+### Repair Drive F
+
 ## Resources
 
 ### The Problem: No interface to program the Pi
