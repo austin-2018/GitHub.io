@@ -15,3 +15,5 @@ For this disk, I decided to try to use “NOOBS Lite” to install Windows. For 
 1. Finally, connect it to power using a powered USB socket (ideally delivering 5v and 1A, or better).
 
 ##### https://jeremylindsayni.wordpress.com/2016/05/02/windows-10-iot-and-the-raspberry-pi-3-installation-failure-and-eventually-success/
+
+### IMPORTANT NOTE:  FILE was formatted as FAT 32, but when it came time to load, Windows Iot formatted as NTFS
