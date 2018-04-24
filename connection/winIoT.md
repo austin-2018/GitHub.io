@@ -16,3 +16,4 @@
 1. In the Dashboard, click on the My Devices tab
 1. Find your unconfigured board from the list. Its name will begin with "AJ_" (e.g. AJ_58EA6C68).  If you don't see your board appear after a few minutes, try rebooting your board.
 1. Click on Configure Device and enter your network credentials. This will connect your board to the network.
+ 
