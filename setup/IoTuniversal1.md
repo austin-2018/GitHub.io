@@ -18,4 +18,4 @@
 
 5. Remember to give a good name to your first app! In this example, we called the project 'HelloWorld'.
 
-![PivotalTracker](Project2165791_April19.png)
+![Dialog Box](new-cs-project-dialog.png)
