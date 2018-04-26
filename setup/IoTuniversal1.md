@@ -17,3 +17,5 @@
 4. Select the template Blank App (Windows Universal).
 
 5. Remember to give a good name to your first app! In this example, we called the project 'HelloWorld'.
+
+![PivotalTracker](Project2165791_April19.png)
