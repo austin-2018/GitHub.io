@@ -6,7 +6,7 @@
 
 ### Note: This is NOT using the IoT template
 
-#### https://github.com/Microsoft/Windows-iotcore-samples/tree/master/Samples/HelloWorld/CS
+#### The source of all the information on this page, including images, is from: https://github.com/Microsoft/Windows-iotcore-samples/tree/master/Samples/HelloWorld/CS | As accessed April 25, 2018
 
 1. Start Visual Studio 2017.
 
