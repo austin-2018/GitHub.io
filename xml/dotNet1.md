@@ -20,3 +20,76 @@ XML is used to encode all communications to a Web service. For example, a client
 ##### Create a New ASP.NET Application and add a Web Service.
 
 ##### The following example demonstrates a sample web service, which sends information of an Employee. Remember that, we have to use [WebMethod] attribute to expose service method.
+using System;  
+  
+using System.Collections.Generic;  
+  
+using System.Linq;  
+  
+using System.Web;  
+  
+using System.Web.Services;  
+  
+namespace SampleWebService  
+  
+{  
+  
+    /// <summary>  
+  
+    /// Summary description for Test  
+  
+    /// </summary>  
+  
+    [WebService(Namespace = "http://tempuri.org/")]  
+  
+    [WebServiceBinding(ConformsTo = WsiProfiles.BasicProfile1_1)]  
+  
+    [System.ComponentModel.ToolboxItem(false)]  
+  
+    // To allow this Web Service to be called from script, using ASP.NET AJAX, uncomment the following line.  
+  
+    // [System.Web.Script.Services.ScriptService]  
+  
+    public class Employee  
+  
+    {  
+  
+        public int EmpID   
+      {  
+            get;  
+            set;  
+        }  
+  
+        public string EmpName   
+        {  
+            get;  
+            set;  
+        }  
+  
+        public string country   
+        {  
+            get;  
+            set;  
+        }  
+  
+    }  
+  
+    public class Test: System.Web.Services.WebService  
+  
+    {  
+  
+        [WebMethod]  
+  
+        public Employee GetEmployee()  
+  
+        {  
+  
+            return new Employee {  
+                EmpID = 1, EmpName = "Sridhar", country = "India"  
+            };  
+  
+        }  
+  
+    }  
+  
+}  
