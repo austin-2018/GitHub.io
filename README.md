@@ -1,1 +1,1 @@
-# Resources and tests used for project
+# Resources used for main project
