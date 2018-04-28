@@ -13,3 +13,9 @@
 ##### POINTS OF FAILURE: 
 1. UNABLE TO BUILD 
 2. UNABLE TO DEBUG
+
+![GitHub Logo](/images/logo.png)
+![GitHub Logo](/images/logo.png)
+![GitHub Logo](/images/logo.png)
+![GitHub Logo](/images/logo.png)
+![GitHub Logo](/images/logo.png)
