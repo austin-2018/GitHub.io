@@ -7,15 +7,15 @@
 #### August 24, 2017jevpankov
 #### https://jev-pankov.com/2017/08/24/temperature-sensor-for-windows-10-iot-core/
 ### NOTES
-
-##### POSSIBLE VERSION OF VISUAL STUDIO CODE MISMATCH
-
-##### POINTS OF FAILURE: 
+#### Certificate Issue 
+###### See related information
+###### 
+##### CURRENT POINTS OF FAILURE [As of April 28, 2018]: 
 1. UNABLE TO BUILD 
 2. UNABLE TO DEBUG
 
-![GitHub Logo](/images/logo.png)
-![GitHub Logo](/images/logo.png)
+![Image of temperature sensor](temp-sensor.jpg)
+![temp sensor](temp-sensor1.jpg)
 ![GitHub Logo](/images/logo.png)
 ![GitHub Logo](/images/logo.png)
 ![GitHub Logo](/images/logo.png)
