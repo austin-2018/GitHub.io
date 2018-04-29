@@ -1,1 +1,1 @@
-# Resources used for main project
+# Background Information and Resources used for IoT Project
