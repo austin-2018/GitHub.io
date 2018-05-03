@@ -6,4 +6,4 @@
 ##### The library presents a simple class called Dht11 in the namesapace Sensors.Dht. 
 
 1. First open the GPIO pin you have the DHT11 sensor pin connected.
-1. *using Sensors.Dht;GpioPin pin = GpioController.GetDefault().OpenPin(4, GpioSharingMode.Exclusive);*
+1. **using Sensors.Dht;GpioPin pin = GpioController.GetDefault().OpenPin(4, GpioSharingMode.Exclusive);**
