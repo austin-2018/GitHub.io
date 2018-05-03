@@ -9,3 +9,15 @@
 1. **using Sensors.Dht;GpioPin pin = GpioController.GetDefault().OpenPin(4, GpioSharingMode.Exclusive);**
 1. Then pass this pin to the constructor of the Dht11 class and specify the GPIO Pin Drive Mode. This allows you to decide whether you will add your own pull-up resistor.
 1. **Dht11 dht11 = new Dht11(_pin, GpioPinDriveMode.Input);**
+1. To get a reading from the device use the GetReadingAsync method.
+1. **DhtReading reading = await dht11.GetReadingAsync().AsTask();**
+1. There is an overload that allows the maximum retry value to be specified. The default value is 20. This specifies how many attempts to make to read the sensor before giving up and returning a failed reading.
+1. The DhtReading structure is defined as:
+public value struct DhtReading
+{
+  bool TimedOut;
+  bool IsValid;
+  double Temperature;
+  double Humidity;
+  int RetryCount;
+};
