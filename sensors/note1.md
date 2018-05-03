@@ -23,3 +23,4 @@ public value struct DhtReading
   double Humidity;
   int RetryCount;
 };
+##### TimedOut (true if the attempting to take a reading timed out; false otherwise) IsValid (true if the reading checksum was correct; false otherwise) Temperature (the temperature reading in Celsius. The DHT11 only supports integer values) Humidity (the humidity reading in percent. The DHT11 only supports integer values)RetryCount (the number of attempts made to read the sensor)
