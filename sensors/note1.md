@@ -7,3 +7,5 @@
 
 1. First open the GPIO pin you have the DHT11 sensor pin connected.
 1. **using Sensors.Dht;GpioPin pin = GpioController.GetDefault().OpenPin(4, GpioSharingMode.Exclusive);**
+1. Then pass this pin to the constructor of the Dht11 class and specify the GPIO Pin Drive Mode. This allows you to decide whether you will add your own pull-up resistor.
+1. **Dht11 dht11 = new Dht11(_pin, GpioPinDriveMode.Input);**
