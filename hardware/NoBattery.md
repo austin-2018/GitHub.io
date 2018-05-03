@@ -4,22 +4,20 @@
 
 #### This cell phone doesn't need a battery (video)
 #### http://money.cnn.com/video/technology/2017/07/10/battery-free-cell-phone-university-of-washington.cnnmoney/index.html
-People
-Students
-Vamsi Talla
-Bryce Kellogg
-Sam Crow 
-Wu Meiling 
-Faculty
-Shyam Gollakota
-Joshua R. Smith
+##### People 
+###### Students
+1. Vamsi Talla
+1. Bryce Kellogg
+1. Sam Crow 
+1. Wu Meiling 
+###### Faculty
+1. Shyam Gollakota
+1. Joshua R. Smith
 
-Contact: batteryfreephone@cs.washington.edu
-Publications
-Battery Free Cellphone
-Vamsi Talla, Bryce Kellogg, Shyam Gollakota, Joshua R. Smith
-IMWUT, February 2017 [PDF]
-Links
-UW Networks & Mobile Systems Lab
-UW Sensor Systems Lab
+##### Contact: batteryfreephone@cs.washington.edu
+##### Publications
+###### Battery Free Cellphone | Vamsi Talla, Bryce Kellogg, Shyam Gollakota, Joshua R. Smith | IMWUT, February 2017 [PDF]
+##### Links
+1. UW Networks & Mobile Systems Lab | http://netlab.cs.washington.edu/
+1. UW Sensor Systems Lab | http://sensor.cs.washington.edu/
 
