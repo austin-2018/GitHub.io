@@ -42,4 +42,8 @@
         }
 
 
-
+### You can use the following code to determine whether the device that is running your app is able to send SMS messages.
+                        if (Windows.Foundation.Metadata.ApiInformation.IsTypePresent("Windows.ApplicationModel.Chat"))
+                        {
+                           // Call code here.
+                        }
