@@ -47,3 +47,7 @@
                         {
                            // Call code here.
                         }
+#
+#### Summary and next steps
+##### This topic has shown you how to launch the compose SMS dialog. For information on selecting contacts to use as recipients for an SMS message, see Select contacts. Download the Universal Windows app samples from GitHub to see more examples of how to send and receive SMS messages by using a background task.
+
