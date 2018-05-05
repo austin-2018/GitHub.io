@@ -1,4 +1,7 @@
-## Essentially a Backup file of resources elsewhere in this repository
+## This file is essentially a "listing" of resources (and backup reference for the repository) on all things SMS
+
+#### Send an SMS message
+##### https://docs.microsoft.com/en-us/windows/uwp/contacts-and-calendar/sending-an-sms-message
 
 #### GITHUB  Samples  SMS Send And Receive
 ##### https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/SmsSendAndReceive
