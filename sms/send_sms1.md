@@ -10,6 +10,9 @@
 ##### Create a new ChatMessage object and set the data that you want to be pre-populated in the compose email dialog. Call ShowComposeSmsMessageAsync to show the dialog.
 
 #### Note: Creating a new ChatMessage object: https://docs.microsoft.com/en-us/uwp/api/Windows.ApplicationModel.Chat.ChatMessage
+#### Note: Concerning ShowComposeSmsMessageAsync see ChatMessageManager Class
+#### https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.chat.chatmessagemanager.showcomposesmsmessageasync
+
 
         private async void ComposeSms(Windows.ApplicationModel.Contacts.Contact recipient,
             string messageBody,
