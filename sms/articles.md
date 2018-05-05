@@ -6,3 +6,6 @@
 
 #### How do I use text control (SMS) with Hive Active Heating?
 #### https://www.hivehome.com/support/Help_Using_Hive/HUH_Hive_Active_Heating_Features/How-do-I-use-text-control-SMS-with-Hive-Active-Heating
+
+#### WinIoT Receive SMS, Get signal bars GSM network
+#### https://social.msdn.microsoft.com/Forums/en-US/0c6dca5a-49a9-44ef-8e62-00fbc470a9aa/winiot-receive-sms-get-signal-bars-gsm-network?forum=WindowsIoT
