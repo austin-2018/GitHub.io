@@ -1,7 +1,7 @@
 #### Internet of Things - Working with Raspberry Pi and Windows 10
 #### https://msdn.microsoft.com/en-us/magazine/mt808503.aspx
 
-##### Excerpt
+##### Excerpt:
 
 ```Once you do that, you’ll have the tools installed and you can start developing for the Raspberry Pi using Windows 10. Create a new project and select the “Blank” UWP app.```
 
@@ -13,3 +13,12 @@
             VerticalAlignment="Center"/>
         </Grid>
 #
+``` Then, in MainPage.xaml.cs, put this code to get and display the machine name:```
+#
+                           public MainPage()
+                             this.InitializeComponent();
+                             Windows.Security.ExchangeActiveSyncProvisioning.EasClientDeviceInformation eas =
+                               new Windows.Security.ExchangeActiveSyncProvisioning.EasClientDeviceInformation();
+                             MachineText.Text = eas.FriendlyName;
+                           }
+#                           
