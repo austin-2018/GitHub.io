@@ -21,3 +21,5 @@
 
 3. To get a reading from the device use the GetReadingAsync method.
         DhtReading reading = await dht11.GetReadingAsync().AsTask();
+        
+        DhtReading reading = await dht11.GetReadingAsync().AsTask();
