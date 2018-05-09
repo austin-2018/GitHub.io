@@ -12,5 +12,5 @@
 ##### Creating a new object in C# is simple.
 1. First open the GPIO pin you have the DHT11 sensor pin connected.
 
-using Sensors.Dht;
-GpioPin pin = GpioController.GetDefault().OpenPin(4, GpioSharingMode.Exclusive);
+        using Sensors.Dht;
+        GpioPin pin = GpioController.GetDefault().OpenPin(4, GpioSharingMode.Exclusive);
