@@ -18,3 +18,6 @@
 2. Then pass this pin to the constructor of the Dht11 class and specify the GPIO Pin Drive Mode. This allows you to decide whether you will add your own pull-up resistor.
 
         Dht11 dht11 = new Dht11(_pin, GpioPinDriveMode.Input);
+
+3. To get a reading from the device use the GetReadingAsync method.
+        DhtReading reading = await dht11.GetReadingAsync().AsTask();
