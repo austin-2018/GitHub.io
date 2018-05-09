@@ -27,11 +27,11 @@
 4. There is an overload that allows the maximum retry value to be specified. The default value is 20. This specifies how many attempts to make to read the sensor before giving up and returning a failed reading.
 
 The DhtReading structure is defined as:
-        public value struct DhtReading
-        {
-          bool TimedOut;
-          bool IsValid;
-          double Temperature;
-          double Humidity;
-          int RetryCount;
-        };
+                public value struct DhtReading
+                        {
+                          bool TimedOut;
+                          bool IsValid;
+                          double Temperature;
+                          double Humidity;
+                          int RetryCount;
+                        };
