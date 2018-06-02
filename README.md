@@ -1,1 +1,1 @@
-# Background Information and Resources used for IoT Project
+# Initial Investigation and Background Information for IoT Project
